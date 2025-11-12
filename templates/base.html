@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Simple Bootstrap Homepage</title>
+    <title>{% block title %}{% endblock title %} | Blog website</title>
 
     <!-- Bootstrap 5 CSS -->
     <link
@@ -12,18 +12,6 @@
     />
 
     <style>
-      body {
-        font-family: "Helvetica Neue", Arial, sans-serif;
-      }
-      .hero {
-        padding: 100px 0;
-        text-align: center;
-        background-color: #f8f9fa;
-      }
-      .hero h1 {
-        font-weight: 600;
-        margin-bottom: 20px;
-      }
       footer {
         background-color: #f8f9fa;
         padding: 30px 0;
@@ -37,7 +25,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">MyWebsite</a>
+        <a class="navbar-brand fw-bold" href="#">BlogsWebsite</a>
         <button
           class="navbar-toggler"
           type="button"

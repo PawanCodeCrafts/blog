@@ -19,7 +19,7 @@ def home(request):
         'active': isActive
     }
 
-    return render(request, "base.html", context=di)
+    return render(request, "index.html", context=di)
 
 def about(request):
     return render(request, 'about.html')
