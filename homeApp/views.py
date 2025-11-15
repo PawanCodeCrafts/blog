@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 # mene yeh code likha hai
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
 def home(request):
     username = "Pawan"
