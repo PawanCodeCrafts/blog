@@ -5,28 +5,15 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    name = "pawan"
-    age = 21
-    dogs = ['dog1', 'dog2']
-    info = {"degree": "B.Tech", "college": "RJIT", "job": "Netmax"}
-    isActive = False 
+    username = "Pawan"
+    context = {'username': username} 
+    return render(request, 'index.html', context)
 
-    di = {
-        'name': name,
-        'age': age,
-        'dogs': dogs,
-        'info': info,
-        'active': isActive
-    }
-
-    return render(request, "index.html", context=di)
 
 def about(request):
     return render(request, 'about.html')
 
-def services(request):
-    return render(request, 'services.html')
-
 def contact(request):
     return render(request, 'contact.html')
+
 

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Contact Us{% endblock title %}
+
+{% block content %}
+<div class="container py-5">
+    <!-- Hero Section -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">Get in Touch</h1>
+        <p class="lead text-muted">We’d love to hear from you! Send us your questions, suggestions, or feedback.</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+            <div class="card shadow-sm p-4">
+                <h3 class="fw-bold mb-4">Contact Form</h3>
+                <form method="post" action="">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btncolor1">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="p-4 text-center bg-light rounded shadow-sm">
+                <h4 class="fw-bold mb-3">Contact Information</h4>
+                <p><i class="bi bi-geo-alt-fill me-2 text-warning"></i>123 Blog Street, Tech City</p>
+                <p><i class="bi bi-envelope-fill me-2 text-warning"></i>info@blogwebsite.com</p>
+                <p><i class="bi bi-telephone-fill me-2 text-warning"></i>+1 (234) 567-890</p>
+
+                <div class="mt-3">
+                    <a href="#" class="text-dark me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-dark me-3 fs-4"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-dark fs-4"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

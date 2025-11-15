@@ -1,0 +1,23 @@
+#mywebsitelogo {
+    font-size: 29px;
+    margin-right: 60px;
+    color: #FFCA2C;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+
+.nav-link:hover {
+    color: #FFCA2C;
+}
+
+.btncolor1 {
+    background: #FFCA2C;
+}
+
+.btncolor1:hover {
+    background: #daac23;
+}

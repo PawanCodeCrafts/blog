@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %} 
+
+{% block title %}Home {% endblock title %}
+
+{% block content %}
+ <div class="text-center">
+        <h1 class="fw-bold">Welcome , {{username}} 😃!</h1>
+    </div>
+<div class="container col-xxl-8 px-4 py-2">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="{% static 'images/homeimg.jpg' %}" class="d-block mx-lg-auto img-fluid" alt="nature image" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Explore the Latest in Tech, Coding, and Innovation</h1>
+        <p class="lead">Stay ahead with insightful articles, tutorials, and industry updates. Learn new skills, discover innovative solutions, and join a community of passionate developers and tech enthusiasts.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btncolor1 btn-lg px-4 me-md-2">Read Blog</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
+
+
